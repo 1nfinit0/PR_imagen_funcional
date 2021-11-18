@@ -51,7 +51,7 @@ nav {
 body header {
     width: 100%;
     height: auto;
-    background-image: url("/img/noche_header.jpg");
+    background-image: url("../img/noche_header.jpg");
     background-size: cover;
     background-position: center;
     padding: 25rem 0 10rem 0;
@@ -106,7 +106,7 @@ section {
 article.base {
     width: 100%;
     height: auto;
-    background-image: url("/img/base.jpg");
+    background-image: url("../img/base.jpg");
     background-size: cover;
 }
 article.base div {
@@ -140,7 +140,7 @@ article.base div p {
 .tematica {
     width: 100%;
     height: auto;
-    background-image: url("/img/tematicos.jpg");
+    background-image: url("../img/tematicos.jpg");
     background-size: cover;
 }
 article.tematica div {
