@@ -23,9 +23,13 @@ header {
     position: fixed;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
 }
 .logo {
     width: 100%;
+    max-width: 400px;
     height: auto;
     display: flex;
     justify-content: center;
@@ -35,16 +39,17 @@ header {
 }
 .header_enlaces {
     width: 100%;
+    max-width: 400px;
     height: auto;
 }
 .header_enlaces ul {
     display: flex;
     justify-content: space-around;
-    margin-top: 1rem;
 }
 .header_enlaces ul a {
     text-decoration: none;
     color: white;
+    font-size: 1.1rem;
 }
 .unete {
     padding: 0.5rem 1.5rem 0.5rem 1.5rem;
@@ -63,7 +68,7 @@ header {
 nav {
     background-image: url("../img/noche_header.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: 20% 80%;
     width: 100%;
     height: 90vh;
     display: flex;
@@ -74,15 +79,18 @@ nav {
     padding-top: 2rem;
 }
 nav h1 {
+    max-width: 650px;
     padding: 1rem;
     color: aliceblue;
     font-size: 3rem;
 }
 .buscador {
     width: 95%;
+    max-width: 450px;
     height: 40px;
     margin-top: 1rem;
     border-radius: 25px;
+    padding: 1.7rem;
     border: solid;
     border-color: #525357;
     border-width: 1px;
@@ -90,11 +98,11 @@ nav h1 {
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
+    background-color: #525357bb;
 }
 .lupa {
-    width: 17px;
-    height: 17px;
-    margin: 1.7rem;
+    width: 1.5rem;
+    margin-right: 1rem;
     -webkit-filter: invert(40%);
     filter: invert(55%);
 }
@@ -102,20 +110,194 @@ nav h1 {
     flex-grow: 1;
     width: auto;
     height: 35px;
-    margin: auto;
     border: none;
-    background-color: inherit;
+    background-color: #52535700;
     color: white;
 }
 .buscador input:focus {
     border-style: none;
     outline: none;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 .microfono {
-    width: 15px;
-    height: 20px;
-    margin: 1.7rem;
+    width: 1.5rem;
+    margin-left: 1rem;
     -webkit-filter: invert(100%);
     filter: invert(50%);
+}
+
+/* SECCIONES */
+section {
+    min-height: 250px;
+}
+hr {
+    max-width: 880px;
+}
+.mapas-base {
+    background-image: url("../img/mapas_base.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-content: flex-start;
+}
+.mapas-base div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.mapas-base a {
+    text-decoration: none;
+}
+.mapas-base a h2 {
+    color: white;
+    font-size: 2rem;
+    padding: 1.5rem 0 0.5rem 0;
+}
+.mapas-base div hr {
+    width: 85%;
+    height: 1px;
+    border: none;
+    background-color: rgb(133, 132, 132);
+    align-self: flex-end;
+}
+.mapas-base div p {
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1rem;
+    color: white;
+    font-size: 1rem;
+}
+
+
+.mapas-tematicos {
+    background-image: url("../img/mapas_tematicos.jpg");
+    background-size: cover;
+    background-position: 70% 30%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: end;
+}
+.mapas-tematicos div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.mapas-tematicos a {
+    text-decoration: none;
+}
+.mapas-tematicos a h2 {
+    color: white;
+    font-size: 1.9rem;
+    padding: 1.5rem 1rem 0.5rem 0;
+    align-self: flex-start;
+    margin-left: 0;
+}
+.mapas-tematicos div hr {
+    width: 85%;
+    height: 1px;
+    border: none;
+    background-color: rgb(133, 132, 132);
+    align-self: flex-start;
+}
+.mapas-tematicos div p {
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1rem 0;
+    color: white;
+    font-size: 1rem;
+    margin-left: 0;
+}
+
+
+.fotografias-imagenes {
+    background-image: url("../img/fotografias_imagenes.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-content: flex-start;
+}
+.fotografias-imagenes div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.fotografias-imagenes div a {
+    text-decoration: none;
+    padding: 0 0 1rem 2.5rem;
+}
+.fotografias-imagenes a h2 {
+    color: white;
+    font-size: 2rem;
+}
+.fotografias-imagenes div hr {
+    width: 85%;
+    height: 1px;
+    border: none;
+    background-color: rgb(133, 132, 132);
+    align-self: flex-end;
+}
+.fotografias-imagenes div p {
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1rem;
+    color: white;
+    font-size: 1rem;
+}
+
+
+.bd-espaciales {
+    background-image: url("../img/bd_espaciales.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: end;
+}
+.bd-espaciales div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bd-espaciales a {
+    text-decoration: none;
+}
+.bd-espaciales a h2 {
+    color: white;
+    font-size: rem;
+    padding: 1.5rem 1rem 0.5rem 0;
+    align-self: flex-start;
+    margin-left: -6rem;
+}
+.bd-espaciales div hr {
+    width: 85%;
+    height: 1px;
+    border: none;
+    background-color: rgb(133, 132, 132);
+    align-self: flex-start;
+}
+.bd-espaciales div p {
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1rem 0;
+    color: white;
+    font-size: 1rem;
+    margin-left: 0;
 }
