@@ -19,7 +19,7 @@ header {
     width: 100%;
     height: auto;
     background-color: hsl(206deg 73% 4%);
-    padding: 1rem 0 1rem 0;
+    padding: 1rem;
     position: fixed;
     display: flex;
     flex-wrap: wrap;
@@ -35,7 +35,7 @@ header {
     justify-content: center;
 }
 .logo img {
-    width: 10rem;
+    width: 11rem;
 }
 .header_enlaces {
     width: 100%;
@@ -49,7 +49,7 @@ header {
 .header_enlaces ul a {
     text-decoration: none;
     color: white;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
 .unete {
     padding: 0.5rem 1.5rem 0.5rem 1.5rem;
@@ -70,7 +70,7 @@ nav {
     background-size: cover;
     background-position: 20% 80%;
     width: 100%;
-    height: 90vh;
+    height: 75vh;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
@@ -79,10 +79,11 @@ nav {
     padding-top: 2rem;
 }
 nav h1 {
-    max-width: 650px;
-    padding: 1rem;
+    max-width: 750px;
+    padding: 0 3rem;
     color: aliceblue;
-    font-size: 3rem;
+    font-size: 3.5rem;
+    text-align: center;
 }
 .buscador {
     width: 95%;
@@ -117,7 +118,7 @@ nav h1 {
 .buscador input:focus {
     border-style: none;
     outline: none;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 .microfono {
     width: 1.5rem;
@@ -126,178 +127,184 @@ nav h1 {
     filter: invert(50%);
 }
 
+.mapas-base {
+    background-image: url("../img/mapas_base.jpg");
+}
+.mapas-tematicos {
+    background-image: url("../img/mapas_tematicos.jpg");
+}
+.fotografias-imagenes {
+    background-image: url("../img/fotografias_imagenes.jpg");
+}
+.bd-espaciales {
+    background-image: url("../img/bd_espaciales.jpg");
+}
 /* SECCIONES */
 section {
     min-height: 250px;
-}
-hr {
-    max-width: 880px;
-}
-.mapas-base {
-    background-image: url("../img/mapas_base.jpg");
     background-size: cover;
     background-position: center;
     width: 100%;
     height: auto;
     display: flex;
-    align-content: flex-start;
+    justify-content: center;
 }
-.mapas-base div {
+hr {
+    max-width: 600px;
+}
+/* CONTENIDO */
+.section__mapas--titulo {
     width: 50%;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.mapas-base a {
+.secction__mapas--a {
     text-decoration: none;
 }
-.mapas-base a h2 {
+.secction__mapas--h2 {
     color: white;
     font-size: 2rem;
     padding: 1.5rem 0 0.5rem 0;
 }
-.mapas-base div hr {
+.secction__mapas--hr {
     width: 85%;
     height: 1px;
     border: none;
     background-color: rgb(133, 132, 132);
-    align-self: flex-end;
+    align-self: center;
 }
-.mapas-base div p {
+.secction__mapas--p {
     width: 80%;
     max-width: 500px;
     margin: 0 auto;
     padding: 1rem;
     color: white;
-    font-size: 1rem;
+    font-size: 1.4rem;
 }
 
+/* FOOTER */
 
-.mapas-tematicos {
-    background-image: url("../img/mapas_tematicos.jpg");
-    background-size: cover;
-    background-position: 70% 30%;
+footer {
+    width: 100%;
+    height: auto;
+    background-color: hsl(206deg 73% 4%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+footer .descripcion {
     width: 100%;
     height: auto;
     display: flex;
-    justify-content: end;
-}
-.mapas-tematicos div {
-    width: 50%;
-    display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
+}
+.descripcion img {
+    width: 20rem;
+    height: 8rem;
+    margin: 1rem;
+}
+.descripcion__parrafo {
+    width: 80%;
+    max-width: 640px;
+    display: flex;
     justify-content: center;
 }
-.mapas-tematicos a {
-    text-decoration: none;
-}
-.mapas-tematicos a h2 {
+.descripcion__parrafo p {
+    max-width: 400px;
     color: white;
-    font-size: 1.9rem;
-    padding: 1.5rem 1rem 0.5rem 0;
-    align-self: flex-start;
-    margin-left: 0;
-}
-.mapas-tematicos div hr {
-    width: 85%;
-    height: 1px;
-    border: none;
-    background-color: rgb(133, 132, 132);
-    align-self: flex-start;
-}
-.mapas-tematicos div p {
-    width: 80%;
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 1rem 0;
-    color: white;
-    font-size: 1rem;
-    margin-left: 0;
+    font-size: 1.3rem;
+    margin: 0 1rem 1rem 1rem;
+    text-align: center;
 }
 
-
-.fotografias-imagenes {
-    background-image: url("../img/fotografias_imagenes.jpg");
-    background-size: cover;
-    background-position: center;
+footer .formulario {
     width: 100%;
     height: auto;
     display: flex;
-    align-content: flex-start;
-}
-.fotografias-imagenes div {
-    width: 50%;
-    display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+
 }
-.fotografias-imagenes div a {
-    text-decoration: none;
-    padding: 0 0 1rem 2.5rem;
-}
-.fotografias-imagenes a h2 {
+.formulario p { 
     color: white;
-    font-size: 2rem;
-}
-.fotografias-imagenes div hr {
-    width: 85%;
-    height: 1px;
-    border: none;
-    background-color: rgb(133, 132, 132);
-    align-self: flex-end;
-}
-.fotografias-imagenes div p {
-    width: 80%;
-    max-width: 500px;
-    margin: 0 auto;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 4rem;
     padding: 1rem;
-    color: white;
-    font-size: 1rem;
 }
-
-
-.bd-espaciales {
-    background-image: url("../img/bd_espaciales.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: auto;
+.formulario .email {
+    width: 80%;
+    max-width: 400px;
+    height: 40px;
+    background-color: black;
+    margin-bottom: 4rem;
     display: flex;
-    justify-content: end;
+    flex-wrap: nowrap;
+    border-radius: 10px;
+    border: 1px solid gray;
 }
-.bd-espaciales div {
-    width: 50%;
+.formulario .email input{
+    width: 70%;
+    background-color: #52535700;
+    border: none;
+    border-style: none;
+    color: white;
+    padding: 1rem;
+}
+.formulario .email button {
+    width: 30%;
+    background-color: #52535781;
+    border: none;
+    border-style: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+.formulario .email input:focus {
+    outline: none;
+}
+.formulario .email button:hover {
+    background-color: #25262b81;
+} 
+footer .quiensoy {
+    width: 100%;
+    height: 150px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
-.bd-espaciales a {
+.quiensoy ul {
+    margin: 0 auto;
+    width: 50%;
+    max-width: 320px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+.quiensoy ul li {
+    display: flex;
+    align-items: center;
+}
+.quiensoy ul li img {
+    width: 20px;
+    filter: invert(1);
+}
+.quiensoy ul li a {
     text-decoration: none;
 }
-.bd-espaciales a h2 {
-    color: white;
-    font-size: rem;
-    padding: 1.5rem 1rem 0.5rem 0;
-    align-self: flex-start;
-    margin-left: -6rem;
-}
-.bd-espaciales div hr {
-    width: 85%;
-    height: 1px;
-    border: none;
-    background-color: rgb(133, 132, 132);
-    align-self: flex-start;
-}
-.bd-espaciales div p {
-    width: 80%;
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 1rem 0;
-    color: white;
-    font-size: 1rem;
-    margin-left: 0;
+.quiensoy h4 {
+    color: #f8f8f8;
+    padding: 0.5rem 0;
+    text-align: center;
 }

@@ -1,51 +1,15 @@
 .logo img {
-    width: 14rem;
-}
-nav {
-    background-position: 50% 80%;
+    width: 15rem;
 }
 .header_enlaces ul a {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 nav h1 {
     font-size: 4.5rem;
 }
-.buscador input {
-    height: 45px;
+.secction__mapas--h2 {
+    font-size: 4rem;
 }
-.buscador input:focus {
-    font-size: 1.6rem;
-}
-section {
-    min-height: 400px;
-}
-.mapas-base a h2 {
-    font-size: 2.7rem;
-}
-.mapas-base div p {
-    font-size: 1.6rem;
-    padding-left: 0;
-}
-.mapas-tematicos a h2 {
-    font-size: 2.7rem;
-    margin-left: -100%;
-}
-.mapas-tematicos div p {
-    font-size: 1.6rem;
-    margin-left: 10%;
-}
-.fotografias-imagenes a h2 {
-    font-size: 2.7rem;
-}
-.fotografias-imagenes div p {
-    font-size: 1.6rem;
-    padding-left: 0;
-}
-.bd-espaciales a h2 {
-    font-size: 2.8rem;
-    margin-left: -100%;
-}
-.bd-espaciales div p {
-    font-size: 1.6rem;
-    margin-left: 10%;
+.secction__mapas--p {
+    font-size: 2rem;
 }

@@ -12,47 +12,23 @@ header {
     width: 50%;
 }
 .header_enlaces ul a {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 nav h1 {
-    font-size: 3.5rem;
-}
-.buscador input {
-    height: 40px;
+    font-size: 4rem;
 }
 .buscador input:focus {
     font-size: 1.5rem;
 }
-section {
-    min-height: 300px;
+.secction__mapas--p {
+    font-size: 1.6rem;
 }
-.mapas-base a h2 {
-    font-size: 2.5rem;
+.secction__mapas--h2 {
+    font-size: 3rem;
 }
-.mapas-base div p {
-    font-size: 1.5rem;
-    padding-left: 2rem;
+footer .descripcion {
+    width: 50%;
 }
-.mapas-tematicos a h2 {
-    font-size: 2.5rem;
-    margin-left: -8rem;
-}
-.mapas-tematicos div p {
-    font-size: 1.5rem;
-    margin-left: 1rem;
-}
-.fotografias-imagenes a h2 {
-    font-size: 2.5rem;
-}
-.fotografias-imagenes div p {
-    font-size: 1.5rem;
-    padding-left: 2rem;
-}
-.bd-espaciales a h2 {
-    font-size: 2.5rem;
-    margin-left: -10rem;
-}
-.bd-espaciales div p {
-    font-size: 1.5rem;
-    margin-left: 1rem;
+footer .formulario {
+    width: 50%;
 }
